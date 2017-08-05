@@ -107,6 +107,21 @@ colorspaces:
               - !<AllocationTransform> {allocation: lg2, vars: [-8.80726452163, 1.85940214497]}
               - !<FileTransform> {src: Log2_to_NikonD5200.spi1d, interpolation: best}
 
+  - !<ColorSpace>
+      name: Sony Petrikas Flat Style Encoding
+      family:
+      equalitygroup:
+      bitdepth: 32f
+      description: |
+        Parametric curve approximating values encoded using the Petrikas Flat look style.
+      isdata: false
+      allocation: lg2
+      allocationvars: [-9.14059785500E+0, 5.26068811668E-1]
+      from_reference: !<GroupTransform>
+          children:
+              - !<AllocationTransform> {allocation: lg2, vars: [-9.14059785500E+0, 5.26068811668E-1]}
+              - !<FileTransform> {src: Log2_to_SonyP.spi1d, interpolation: best}
+
 #  - !<ColorSpace>
 #    name: Desat Log Encoding
 #    family:
